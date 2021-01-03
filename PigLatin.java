@@ -7,7 +7,10 @@ public class PigLatin{
       Scanner line = new Scanner(n.nextLine());
       while(line.hasNext()){
         String word = line.next();
-        System.out.print(pigLatinBest(word) + " ");
+        System.out.print(pigLatinBest(word));
+        if(line.hasNext()){
+          System.out.print(" ");
+        }
       }
       System.out.println();
     }
@@ -51,7 +54,7 @@ public class PigLatin{
     if (lowerS.charAt(lowerS.length()-1)!='a' && lowerS.charAt(lowerS.length()-1)!='b' && lowerS.charAt(lowerS.length()-1)!='c' && lowerS.charAt(lowerS.length()-1)!='d' && lowerS.charAt(lowerS.length()-1)!='e' && lowerS.charAt(lowerS.length()-1)!='f' && lowerS.charAt(lowerS.length()-1)!='g' &&
         lowerS.charAt(lowerS.length()-1)!='h' && lowerS.charAt(lowerS.length()-1)!='i' && lowerS.charAt(lowerS.length()-1)!='j' && lowerS.charAt(lowerS.length()-1)!='k' && lowerS.charAt(lowerS.length()-1)!='l' && lowerS.charAt(lowerS.length()-1)!='m' && lowerS.charAt(lowerS.length()-1)!='n' &&
         lowerS.charAt(lowerS.length()-1)!='o' && lowerS.charAt(lowerS.length()-1)!='p' && lowerS.charAt(lowerS.length()-1)!='q' && lowerS.charAt(lowerS.length()-1)!='r' && lowerS.charAt(lowerS.length()-1)!='s' && lowerS.charAt(lowerS.length()-1)!='t' && lowerS.charAt(lowerS.length()-1)!='u' &&
-        lowerS.charAt(lowerS.length()-1)!='v' && lowerS.charAt(lowerS.length()-1)!='u' && lowerS.charAt(lowerS.length()-1)!='x' && lowerS.charAt(lowerS.length()-1)!='y' && lowerS.charAt(lowerS.length()-1)!='z' && lowerS.charAt(lowerS.length()-1)!='0' && lowerS.charAt(lowerS.length()-1)!='1' &&
+        lowerS.charAt(lowerS.length()-1)!='v' && lowerS.charAt(lowerS.length()-1)!='w' && lowerS.charAt(lowerS.length()-1)!='x' && lowerS.charAt(lowerS.length()-1)!='y' && lowerS.charAt(lowerS.length()-1)!='z' && lowerS.charAt(lowerS.length()-1)!='0' && lowerS.charAt(lowerS.length()-1)!='1' &&
         lowerS.charAt(lowerS.length()-1)!='2' && lowerS.charAt(lowerS.length()-1)!='3' && lowerS.charAt(lowerS.length()-1)!='4' && lowerS.charAt(lowerS.length()-1)!='5' && lowerS.charAt(lowerS.length()-1)!='6' && lowerS.charAt(lowerS.length()-1)!='7' && lowerS.charAt(lowerS.length()-1)!='8' &&
         lowerS.charAt(lowerS.length()-1)!='9' ) {
       String S = lowerS.substring(0,lowerS.length()-1);
